@@ -427,6 +427,25 @@ section { padding: 100px 60px; }
   line-height: 1.75;
 }
 
+.service-icon {
+  width: 34px;
+  height: 34px;
+  margin-bottom: 20px;
+  color: var(--gold);
+  transition: transform 0.3s ease;
+}
+
+.service-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.6;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.15);
+}
 /* ── ABOUT ── */
 .about-section {
   display: grid;
