@@ -872,3 +872,64 @@ body.lang-ru [data-lang="ru"] { display: block; }
 body.lang-ru span[data-lang="ru"] { display: inline; }
 body.lang-ru span[data-lang="ro"] { display: none; }
 span[data-lang="ru"] { display: none; }
+
+#checker{
+  font-size: 20px;
+}
+.social-media-links {
+  display: flex;
+  gap: 14px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.social-link svg {
+  width: 24px;
+  height: 24px;
+  fill: rgba(255, 255, 255, 0.75);
+  transition: fill 0.2s ease;
+}
+
+.social-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.55);
+  transform: translateY(-2px);
+}
+
+.social-link:hover svg {
+  fill: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .social-media-links {
+    justify-content: center;
+    margin-top: 24px;
+    gap: 16px;
+  }
+
+  .social-link {
+    width: 56px;
+    height: 56px;
+  }
+
+  .social-link svg {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+iframe {
+  display: block;
+}
