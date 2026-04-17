@@ -952,3 +952,13 @@ span[data-lang="ru"] { display: none; }
 iframe {
   display: block;
 }
+
+#form-message {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+#form-message.show {
+  display: block;
+  opacity: 1;
+}
